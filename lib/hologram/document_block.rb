@@ -29,7 +29,7 @@ module Hologram
 
     # sets the header tag based on how deep your nesting is
     def markdown_with_heading(heading = 1)
-      @markdown = "\n\n<h#{heading.to_s} id=\"#{@name}\">#{@title}</h#{heading.to_s}>" + @markdown
+      @markdown = "\n\n<div id=\"#{@name}\"><h#{heading.to_s}>#{@title}</h#{heading.to_s}>" + @markdown + "</div>"
     end
   end
 end
